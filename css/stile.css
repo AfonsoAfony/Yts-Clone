@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 400;
+
+}
+
+:root{
+   
+    --branco: #ffffff;
+    --fundo:rgb(26, 31, 30);
+    --cinza: rgb(94, 94, 94);
+    --cinzaTexto: rgb(169, 169, 169);
+    
+}
+.color-green{
+    color:green;
+}
+.color-white{
+    color: var(--branco);
+}
+.color-white:hover{
+    color:var(--cinza);
+}
+.link{
+    color: var(--cinza);
+}
+.link:hover{
+    color:var(--branco);
+}
+.link-azul{
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 115, 197);
+    margin: 0 0.5% 0 0.5%;
+    
+}
+.link-azul:hover{
+    color: rgba(1, 149, 255, 0.408);
+
+}
+body{
+    font-family:"Inter", sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    background-color: var(--fundo);
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+header{
+    position: fixed;
+    top:0;
+    z-index: 3;
+    width:100%;
+}
+div#cabecalho{
+    width:100%;
+    height:75px;
+    background-color:var(--fundo);
+    display:flex;
+    justify-content: center;
+    flex-direction:space-between;
+    padding: 0 4% 0 4%;
+
+}
+div#cabecalho div#logo{
+    width:40%;
+  
+    display: flex;
+    flex-direction: row;
+}
+div#cabecalho div#logo img {
+    width:18%;
+    
+}
+div#cabecalho div#logo h2 {
+    font-size: 1.1rem;
+    color:var(--cinza);
+    margin:32px 0 0 20px;
+  
+}
+div#cabecalho div#menu{
+    width:60%;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+
+div#cabecalho div#menu ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+}
+div#cabecalho div#menu ul li {
+      display:inline;
+      margin:0 10px 0 10px;
+}
+div#cabecalho div#menu ul li a{
+    text-decoration: none;
+}
+div#cabecalho div#menu li input {
+   height:75%;
+   width:38%;
+   
+   border-radius: 15px;
+   padding-left:9px;
+   color:var(--cinza);
+   background-color: var(--fundo);
+   border:1px solid var(--cinza);
+}
+main{
+    background-image: url("../img/homem_negro.jpg");
+    filter: blur(17px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:900px;
+    
+    margin-top:50px;
+
+}
+section#conteudo{
+    position:relative;
+    margin:-830px 0 0 0;
+    color: var(--branco);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+section#conteudo div#texto h1{
+    font-weight: 600;
+    font-variation-settings:
+      "wdth" 400;
+      font-size: 3rem;
+      margin-bottom: 20px; 
+}
+
+section#conteudo div#texto p{
+    font-weight: 800;
+    font-variation-settings:
+      "wdth" 900;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color:var(--cinzaTexto);
+      width:50%;
+      text-align: center;
+    
+      
+}
+section#conteudo div#texto p#img-link{
+    margin-top:17px;
+    display: flex;
+    justify-content: center;
+    color:var(--branco)
+      
+}
+
+section#conteudo div#texto img{
+    width:2.8%; 
+}
+
+
+
+section#conteudo div#filmes div#dicas{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    border-bottom: 1px solid var(--cinza);
+    padding-bottom: 20px;
+    width:80%;
+}
+section#conteudo div#filmes div#dicas div#populares{
+    width:60%;
+    text-align: right;
+    font-size:larger;
+    
+}
+section#conteudo div#filmes div#dicas div#mais-destaques{
+    width:40%;
+    text-align: right;
+    font-size: larger;
+    padding-top:5px;
+}
+
+section#conteudo div#filmes div#dicas img{
+    width:3%;
+    margin-right: 7px;
+}
+
+
+
+
+section#conteudo div#filmes div#sessao-films {
+    width: 80%;
+    padding:0 10px 0 10px;
+    margin-top: 10px;
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+/* Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+    justify-content: start;
+    align-content: left;
+    margin-bottom: 40px;
+    
+}
+section#conteudo div#filmes div#sessao-films .film{
+    width:25%;
+    height:350px;
+
+}
+section#conteudo div#filmes div#sessao-films .film .capa{
+    border: 5px solid  var(--branco);
+    width:240px;
+    height:300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+section#conteudo div#filmes div#sessao-films .film .info-film p{
+    color:var(--branco);
+    font-size:medium;
+    margin: 5px 0 0 3px;
+    font-weight: 700;
+}
+section#conteudo div#filmes div#sessao-films .film .info-film span{
+    color:var(--cinza);
+    font-size: 14px;
+    margin: 0 0 0 3px;
+}
