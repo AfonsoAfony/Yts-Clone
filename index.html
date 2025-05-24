@@ -20,11 +20,11 @@
         <div id="menu">
            <ul>
                 
-                <li><input type="text" id="inputSearch" oninput="pesquisaFilmes()" placeholder="pesquisa rápida"></li>
+                <li><img id="icon-search" src="img/search.svg"><input type="text" id="inputSearch"  oninput="pesquisaFilmes()" placeholder="pesquisa rápida"></li>
                 <li><a href="" class="link">casa</a></li>
                 <li><a href="" class="color-green">4K</a></li>
-                <li><a href="" class="link">Procurar Filmes</a></li>
-                <li><a href="" class="color-white">login</a></li> 
+                <li><img id="icon-list" src="img/list.png"><a href="" class="link">Procurar Filmes</a></li>
+                <li><img id="icon-user" src="img/user.png"><a href="" class="color-white">login</a></li> 
                 <span style="color:dimgrey">|</span>
                 <li><a href="" class="color-white">Registra</a></li>
             </ul>
@@ -41,7 +41,13 @@
         <h1>Baixe filmes YTS YIFY: menor tamanho HD</h1>
         <p>Bem-vindo ao site oficial do YTS.MX. Aqui você pode navegar e baixar filmes YIFY em excelente qualidade 720p, 1080p, 2160p 4K e 3D, tudo no menor tamanho de arquivo. Torrents de filmes do YTS.</p>
             <a href="#" class="link-azul">IMPORTANTE - YTS.MX é o único novo domínio oficial para YIFY Movies</a>
-            <p id="img-link"><img src="img/telegram.svg"><a href="#" class="link-azul">@YTSMX_UPDATES</a> | <img src="img/twitter.svg"><a href="" class="link-azul">Follow @YTSYIFY for upcoming featured movies!</a> | <img src="img/mastodonte.svg"><a href="" class="link-azul"> @ytsyify</a></p>
+            <p id="img-link">
+                <img src="img/telegram.svg">
+                <a href="#" class="link-azul">@YTSMX_UPDATES</a> | 
+                <img src="img/twitter.svg">
+                <a href="" class="link-azul">Follow @YTSYIFY for upcoming featured movies!</a> | 
+                <img src="img/mastodonte.svg">
+                <a href="" class="link-azul"> @ytsyify</a></p>
         
     </div>
     <div id="filmes" class="container">
@@ -54,7 +60,12 @@
            
         </div>
     </div>
- </section>
+        <div id="next-prev" class="container">
+            <button onclick="prevPage()"><</button>
+            <p id="actualPage"></p>
+            <button onclick="nextPage()">></button>
+        </div>
+</section>
     <footer>
 
     </footer>

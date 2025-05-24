@@ -83,7 +83,7 @@ div#cabecalho div#logo{
     flex-direction: row;
 }
 div#cabecalho div#logo img {
-    width:18%;
+    width:32%;
     
 }
 div#cabecalho div#logo h2 {
@@ -123,6 +123,12 @@ div#cabecalho div#menu li input {
    background-color: var(--fundo);
    border:1px solid var(--cinza);
 }
+div#cabecalho div#menu li img#icon-search, img#icon-list, img#icon-user {
+width:6%;
+display: none;
+cursor:pointer;
+}
+
 main{
     background-image: url("../img/homem_negro.jpg");
     filter: blur(17px);
@@ -244,4 +250,329 @@ section#conteudo div#filmes div#sessao-films .film .info-film span{
     color:var(--cinza);
     font-size: 14px;
     margin: 0 0 0 3px;
+}
+
+div#next-prev{
+    flex-direction: row;
+}
+div#next-prev button{
+    width: 4.7%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    color:var(--branco);
+    font-size:110%;
+    cursor: pointer;
+}
+div#next-prev button:hover{
+   
+    background-color:green;
+}
+div#next-prev p{
+    margin:0 2% 0 2%;
+    font-size:100%;
+    color: var(--cinzaTexto);
+
+}
+
+
+
+
+
+
+@media(max-width:575.9px){
+    
+  section#conteudo div#texto p#img-link {
+display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre imagem e link */
+ 
+ width: 100%;
+}
+ section#conteudo div#texto p#img-link img{
+  
+      width: 20px; /* Ajuste conforme necessário */
+    height: auto;
+
+      
+}
+section#conteudo div#texto p#img-link .link-azul{
+  width: 100%;
+     text-decoration: none;
+    font-size: 16px;
+}
+
+  
+    section#conteudo div#texto h1{
+   display: none;
+}
+
+section#conteudo div#texto p{
+   display: none;
+      
+}
+   #cabecalho div#logo h2{
+    display:none;
+   }
+   #cabecalho div#logo{
+    margin-left: 18px;
+   }
+div#cabecalho div#menu{
+    top:0;
+    padding: 0;
+}
+div#cabecalho div#menu ul{
+padding-top: 7.9%;
+
+}
+
+div#cabecalho div#menu li img#icon-search,img#icon-list,img#icon-user {
+display:inline-flex;
+width:10%;
+
+}
+div#cabecalho div#menu li .color-white,span,.link,input#inputSearch {
+display:none;
+
+}
+div#cabecalho div#menu li .color-green{
+font-size: 2rem;
+}
+
+  
+
+
+section#conteudo div#filmes div#sessao-films {
+    width: 100%;
+    padding:0 0 0 6%;
+
+  justify-content: space-between;    
+}
+section#conteudo div#filmes div#sessao-films .film{
+    width:50%;
+    height:350px;
+}
+section#conteudo div#filmes div#sessao-films .film .capa{
+    width:190px;
+    height:290px;
+}
+section#conteudo div#filmes div#sessao-films .film .info-film p{
+    font-weight: 500;
+}
+
+   
+}
+
+@media(min-width:576px) and (max-width:767.9px){
+   
+  section#conteudo div#texto p#img-link {
+display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre imagem e link */
+  }
+ section#conteudo div#texto p#img-link img{
+   
+      width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+
+      
+}
+section#conteudo div#texto p#img-link .link-azul{
+  
+     text-decoration: none;
+    font-size: 14px;
+}
+
+  
+      section#conteudo div#texto h1{
+   display: none;
+}
+
+section#conteudo div#texto p{
+   display: none;
+      
+}
+   #cabecalho div#logo h2{
+    display:none;
+   }
+   
+div#cabecalho div#menu{
+    top:0;
+    padding: 0;
+}
+div#cabecalho div#menu ul{
+padding-top: 3.9%;
+
+}
+
+div#cabecalho div#menu li img#icon-search,img#icon-list,img#icon-user {
+display:inline-flex;
+width:10%;
+
+}
+div#cabecalho div#menu li .color-white,span,.link,input#inputSearch {
+display:none;
+
+}
+div#cabecalho div#menu li .color-green{
+font-size: 2.5rem;
+}
+
+   
+
+section#conteudo div#filmes div#sessao-films {
+    width: 100%;
+    padding:0 4% 0 6%;
+  justify-content: space-around;    
+}
+section#conteudo div#filmes div#sessao-films .film{
+    width:33%;
+    height:350px;
+}
+section#conteudo div#filmes div#sessao-films .film .capa{
+    width:160px;
+    height:240px;
+}
+section#conteudo div#filmes div#sessao-films .film .info-film p{
+    font-weight: 500;
+}
+
+   
+}
+
+@media(min-width:768px) and (max-width:991.9px){
+  
+  section#conteudo div#texto p#img-link {
+display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre imagem e link */
+  }
+ section#conteudo div#texto p#img-link img{
+    width:10px;
+      width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+
+      
+}
+section#conteudo div#texto p#img-link .link-azul{
+  
+     text-decoration: none;
+    font-size: 16px;
+}
+
+  
+    section#conteudo div#texto h1{
+   display: none;
+}
+
+section#conteudo div#texto p{
+   display: none;
+      
+}
+   #cabecalho div#logo h2{
+    display:none;
+   }
+   
+div#cabecalho div#menu{
+    top:0;
+    padding: 0;
+}
+div#cabecalho div#menu ul{
+padding-top: 2.3%;
+
+}
+
+div#cabecalho div#menu li img#icon-search,img#icon-list,img#icon-user {
+display:inline-flex;
+
+}
+div#cabecalho div#menu li .color-white,span,.link,input#inputSearch {
+display:none;
+
+}
+div#cabecalho div#menu li .color-green{
+font-size: 2.7rem;
+}
+
+
+
+
+section#conteudo div#filmes div#sessao-films {
+      padding: 0 0 0 4%;
+}
+section#conteudo div#filmes div#sessao-films .film{
+    width:33%;
+    height:350px;
+}
+section#conteudo div#filmes div#sessao-films .film .capa{
+    width:190px;
+    height:240px;
+}
+section#conteudo div#filmes div#sessao-films .film .info-film p{
+    font-weight: 600;
+}
+
+
+}
+
+@media(min-width:902px) and (max-width:1259.9px){
+    
+   
+
+
+  section#conteudo div#texto p#img-link {
+display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre imagem e link */
+  }
+ section#conteudo div#texto p#img-link img{
+    
+      width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+
+      
+}
+section#conteudo div#texto p#img-link .link-azul{
+  
+     text-decoration: none;
+    font-size: 16px;
+}
+
+  
+
+div#cabecalho div#menu{
+    top:0;
+    padding: 0;
+}
+div#cabecalho div#menu ul{
+padding-top: 1.7%;
+
+}
+div#cabecalho div#menu li img#icon-search,img#icon-list,img#icon-user {
+display:inline-flex;
+}
+div#cabecalho div#menu li .color-white,span,.link,input#inputSearch {
+display:none;
+
+}
+div#cabecalho div#menu li .color-green{
+font-size: 3rem;
+}
+
+
+section#conteudo div#filmes div#sessao-films {
+      padding: 0 0 0 4%;
+}
+section#conteudo div#filmes div#sessao-films .film{
+    width:33%;
+    height:350px;
+}
+section#conteudo div#filmes div#sessao-films .film .capa{
+    width:190px;
+    height:240px;
+}
+section#conteudo div#filmes div#sessao-films .film .info-film p{
+    font-weight: 600;
+}
+
 }
