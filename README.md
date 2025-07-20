@@ -4,7 +4,7 @@ _____________
 
 ### This is Simulation of a web site of movies, that consume an Public API of the real site( [site clonado](<https://yts-mx.my/) ). their API [API do site clonado ](https://yts.mx/api)
 
-# [See the project working](https://gerenciamento-de-usuarios-mu.vercel.app/](https://afonsoafony.github.io/Yts-Clone/)
+# [See the project working](https://afonsoafony.github.io/Yts-Clone)
 
 ## Created with:
 
