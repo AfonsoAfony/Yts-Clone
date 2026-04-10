@@ -4,7 +4,7 @@ const inputSearch = document.querySelector("#inputSearch")
 let currentPage=1
 let limit=20
  async function apiFilmes(page){
-    const filmes=await fetch(`https://yts.mx/api/v2/list_movies.json?page=${page}&limit=${limit}`)
+    const filmes=await fetch(`https://yts.bz/api/v2/list_movies.json?page=${page}&limit=${limit}`)
     return filmes
  }
  
