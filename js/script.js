@@ -4,8 +4,9 @@ const inputSearch = document.querySelector("#inputSearch")
 let currentPage=1
 let limit=20
  async function apiFilmes(page){
-    const filmes=await fetch(`https://yts.bz/api/v2/list_movies.json?page=${page}&limit=${limit}`)
+    const filmes=await fetch(`https://movies-api.accel.li/api/v2/list_movies.json?page=${page}&limit=${limit}`)
     return filmes
+   
  }
  
 console.log(apiFilmes())
@@ -15,7 +16,7 @@ function pegarFilmes(page){
     apiFilmes(page)
     .then(res => res.json())
     .then(json => {
-
+        console.log(json)
         for (const filme of json.data.movies) {
             criarCard((filme.large_cover_image),(filme.title),(filme.year))
         }
@@ -101,7 +102,7 @@ apiFilmes(page)
     for(const filme of json.data.movies){
         
         if( (filme.title.toLowerCase()).includes(inputValue.toLowerCase()) ){
-            criarCard((filme.large_cover_image),(filme.title),(filme.year))   
+            criarCard((filme.medium_cover_image),(filme.title),(filme.year))   
             console.log("tem")
         }         
 
